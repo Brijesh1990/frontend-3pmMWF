@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>container app</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- jquery sliders or main CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--jquery cycle plugins  -->
+<script src="js/cycle.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#slider").cycle("fade,shuffle,turnLeft,turnRight,zoom");
+})
+</script>
+<!-- create a Login page -->
+<script>
+$(document).ready(function(){
+$("#login_btn").click(function(){
+$("#login").fadeToggle("slow");
+$("body").css({});
+})    
+})    
+</script> 
+</head>
+<body class="bg-amber-50 overflow-x-auto relative">
+<!--blinkit  header -->
+<section class="mx-0 my-0  p-3 py-0 top-0 sticky z-10 flex flex-wrap bg-white border-b-1  border-gray-300">
+<!-- blinkit logo -->
+<div class="p-3 ms-5 w-55 border-e-1 border-gray-300"> 
+<a href="index.html" class="decoration-0"><h1 class="text-5xl font-bold animate-pulse font-mono"><span class="text-yellow-400">blin</span><span  class="text-green-600">kit</span></h1></a> 
+</div>
+<div class="p-3 ms-5">
+<!-- dropdown -->
+<select name="address" class="w-55 text-xl mt-0 p-3">
+<option value="">Delivery in 8 minutes B62, Pocket B, South City I, Sector 30, Gurugram, Haryana 122001, India
+</option>
+
+<input type="search" placeholder="search paneer | fruits | vegetables etc" class="p-3 m-0 bg-gray-100 w-125 ms-5" />
+<button type="button" commandfor="dialog" command="show-modal" id="login_btn" class="p-3 bg-gray-0 text-xl w-25 border-0 ms-5 mt-1">Login</button>
+
+
+<button type="button" class="p-3 bg-gray-300 text-xl w-35 rounded-2xl border-0 ms-5 mt-1">My Cart(0)</button>
+</select> 
+</div>
+</section>
+
+<!--blinkit  banner -->
+<section class="p-0 mt-0  relative">
+<!--page banner -->
+<div  class="mt-5 bg-white-200  w-full p-5 h-80">
+<img src="https://connect-assets.prosple.com/cdn/ff/CUPrvdTt49keb4F1LeZSXLs5vCnIUdfymYtV-TcAEMU/1641494723/public/2022-01/banner-blinkit-1786x642-2022.png" class="w-full h-80">
+</div>
+
+</section>
+<div class="clear-both"></div>
+<!--blinkit  content -->
+<section class="content p-5">
+<!-- about us section -->
+
+<div class="grid grid-cols-3">
+<div class="w-full   p-5 text-xl">
+<p align="justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam voluptate eaque facilis illum consectetur nostrum veritatis neque tempora doloribus. Totam illo animi neque molestias nam ipsum commodi vero tempora!</p>
+</div>
+
+<div class="w-full p-5 text-xl">
+<p align="justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam voluptate eaque facilis illum consectetur nostrum veritatis neque tempora doloribus. Totam illo animi neque molestias nam ipsum commodi vero tempora!</p>
+</div>
+
+<div class="w-full  p-5 text-xl">
+<p align="justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam voluptate eaque facilis illum consectetur nostrum veritatis neque tempora doloribus. Totam illo animi neque molestias nam ipsum commodi vero tempora!</p>
+</div>
+
+</div>
+
+<div class="grid grid-cols-2">
+<div class="w-full p-10">
+<p class="text-justify text-xl">
+Launched with the ambition of making everyday essentials available in minutes, Blinkit has revolutionized how India shops.</p>
+
+<p class="text-xl mt-10 text-justify">It has now evolved into a full-fledged quick commerce company, delivering thousands of products including grocery and daily essentials, electronics, beauty & personal care items, stationery, and emergency supplies, directly to your doorsteps, within minutes.</p>
+</div>
+
+<div class="w-full p-10">
+<img src="https://b.zmtcdn.com/data/o2_assets/863f9c9ede0e45945cccdaeab9f8c6311753707419.png" class="" />
+</div>
+
+
+</div>
+
+
+
+<div class="grid grid-cols-2">
+
+<div class="w-full p-10">
+<img src="https://b.zmtcdn.com/data/o2_assets/2865a5b2c6716e1a178ff0b7a467a0521746006238.png" class="" />
+</div>
+
+<div class="w-full p-10">
+<p class="text-justify text-xl">
+Launched with the ambition of making everyday essentials available in minutes, Blinkit has revolutionized how India shops.</p>
+
+<p class="text-xl mt-10 text-justify">It has now evolved into a full-fledged quick commerce company, delivering thousands of products including grocery and daily essentials, electronics, beauty & personal care items, stationery, and emergency supplies, directly to your doorsteps, within minutes.</p>
+</div>
+</div>
+
+
+<div class="grid grid-cols-3 mt-15">
+<div class="w-full p-5">    
+<img src="https://b.zmtcdn.com/data/o2_assets/388c68f9c69bab7875a2c7774a0724611746006358.png" class="w-full" />
+
+<p class="text-4xl mt-5">Fashion</p>
+<p class="text-xl mt-2 text-justify">Whether it's everyday style or last-minute ethnic wear for a friend's wedding, find fashion that fits any life — and any timeline.</p>    
+</div>
+
+<div class="w-full p-5">    
+<img src="https://b.zmtcdn.com/data/o2_assets/61b5a76b937c870bf52c9a7c00d0e7cf1746006318.png" class="w-full" />
+
+<p class="text-4xl mt-5">Sports</p>
+<p class="text-xl mt-2 text-justify">Whether it's everyday style or last-minute ethnic wear for a friend's wedding, find fashion that fits any life — and any timeline.</p>    
+</div>
+
+<div class="w-full p-5">    
+<img src="https://b.zmtcdn.com/data/o2_assets/b2d8ab598a850da6c791171d1a28a29c1746006299.png" class="w-full" />
+
+<p class="text-4xl mt-5">Toys</p>
+<p class="text-xl mt-2 text-justify">Whether it's everyday style or last-minute ethnic wear for a friend's wedding, find fashion that fits any life — and any timeline.</p>    
+</div>
+</div>
+
+<div class="w-320 mx-auto bg-gray-300 grid grid-cols-2 rounded-xl">
+<div class="w-full p-10">
+<h1 class="text-5xl mt-5"> Download the app now</h1>
+<p class="mt-5 text-md">Everything you need, delivered in minutes on the Blinkit app.</p>
+
+<div class="flex flex-row mt-5">
+<img src="https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png" class="w-50">
+
+<img src="https://b.zmtcdn.com/data/o2_assets/df6464de32f4a09262cee301f65aaa661739351256.png" class="w-50" />
+</div>
+</div>
+<div class="w-full p-10 ms-35"><img src="https://b.zmtcdn.com/data/o2_assets/eadf2642f45ae5dc01a7dd2da94eb5821746025007.png" class="w-1/2"></div>
+</div>
+
+
+</section>
+
+<!--blinkit  footer -->
+<section class="footer p-16 bg-gray-100  text-black z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8" data-aos="fade-up-right">
+<!-- Footer Links -->
+<div>
+<h2 class="font-bold mb-4 text-gray-900">Company</h2>
+<ul>
+<li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+<li><a href="career.html" class="hover:text-yellow-400">Careers</a></li>
+<li><a href="press.html" class="hover:text-yellow-400">Press</a></li>
+<li><a href="blogs.html" class="hover:text-yellow-400">Blog</a></li>
+</ul>
+</div>
+<div>
+<h2 class="font-bold mb-4 text-gray-900">Support</h2>
+<ul>
+<li><a href="contact.html" class="hover:text-yellow-400">Contact Us</a></li>
+<li><a href="faq.html" class="hover:text-yellow-400">FAQs</a></li>
+<li><a href="terms.html" class="hover:text-yellow-400">Terms of Service</a></li>
+<li><a href="policy.html" class="hover:text-yellow-400">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h2 class="font-bold mb-4 text-gray-900">Quick Links</h2>
+<ul>
+<li><a href="offers.html" class="hover:text-yellow-400">Offers</a></li>
+<li><a href="stores.html" class="hover:text-yellow-400">Stores</a></li>
+<li><a href="gift.html" class="hover:text-yellow-400">Gift Cards</a></li>
+<li><a href="download.html" class="hover:text-yellow-400">Download App</a></li>
+</ul>
+</div>
+<!-- Newsletter & Social -->
+<div>
+<h2 class="font-bold mb-4 text-gray-900">Newsletter</h2>
+<form class="flex flex-col gap-2">
+<input type="email" placeholder="Your email" class="p-2 rounded text-black bg-white" />
+<button type="submit" class="bg-yellow-400 text-black font-bold py-2 rounded hover:bg-yellow-500">Subscribe</button>
+</form>
+<div class="mt-6 flex gap-4" data-aos="fade-up-left">
+<!-- Facebook -->
+<a href="#" aria-label="Facebook" class="hover:text-yellow-400">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.729 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0"></path></svg>
+</a>
+<!-- Twitter -->
+<a href="#" aria-label="Twitter" class="hover:text-yellow-400">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.916 4.916 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161c-.427.734-.666 1.581-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.418A9.867 9.867 0 010 21.543a13.94 13.94 0 007.548 2.212c9.058 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.025 10.025 0 0024 4.557z"></path></svg>
+</a>
+<!-- Instagram -->
+<a href="#" aria-label="Instagram" class="hover:text-yellow-400">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.309.975.975 1.247 2.242 1.309 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.309 3.608-.975.975-2.242 1.247-3.608 1.309-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.309-.975-.975-1.247-2.242-1.309-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.309-3.608C4.517 2.497 5.784 2.225 7.15 2.163 8.416 2.105 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.131 4.602.407 3.635 1.374c-.967.967-1.243 2.14-1.302 3.417C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.613.059 1.277.335 2.45 1.302 3.417.967.967 2.14 1.243 3.417 1.302C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.277-.059 2.45-.335 3.417-1.302.967-.967 1.243-2.14 1.302-3.417.059-1.281.072-1.69.072-7.613 0-5.923-.013-6.332-.072-7.613-.059-1.277-.335-2.45-1.302-3.417-.967-.967-2.14-1.243-3.417-1.302C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center text-gray-400 text-sm" data-aos="fade-up-right">
+&copy; 2025 Blinkit. All rights reserved.
+</div>
+<div class="mt-12 text-center text-gray-400 text-sm">
+“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”.
+</div>
+</section>
+
+
+<!-- login modal -->
+
+<el-dialog>
+<dialog id="dialog" aria-labelledby="dialog-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+<el-dialog-backdrop class="fixed inset-0 bg-gray-950/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+<div tabindex="0" class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+<el-dialog-panel class="relative transform overflow-hidden rounded-4xl bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+<div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+<img src="images/app_logo.svg" class="w-25 mx-auto" />
+<div class="sm:flex sm:items-start ms-15">
+<div class="mt-0 text-center p-5">
+<div class="mt-0 mx-auto">
+<p class="text-sm text-gray-500">
+<h1 class="text-3xl">India's last minute app </h1>
+<p class="text-xl">Log in or Sign up</p>
+<form class="mt-5">
+<input type="text" placeholder="Enter Your Mobile" class="p-3 border-1 border-gray-300 w-80 rounded-2xl" />
+<br />
+<input type="submit" placeholder="Enter Your Mobile" class="p-3 border-1 bg-gray-900 text-white w-80 rounded-2xl mt-3" value="Continue" />
+
+</form>
+
+</p>
+</div>
+</div>
+</div>
+</div>
+
+</el-dialog-panel>
+</div>
+</dialog>
+</el-dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- aos js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+</html>

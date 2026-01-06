@@ -1,0 +1,29 @@
+<script>
+    let employee=["raj","vijay","ajay","sanjay","brijesh"];
+    // let res=employee.filter(function(emp){
+    //     return emp.length>=4;
+    // });
+    // console.log(res);
+
+    //filter via character 'a'
+    // let res=employee.filter(function(emp){
+    //     return emp.includes('a');
+    // });
+    // console.log(res);
+    // [raj, vijay, ajay, sanjay]
+
+    //filter start with a character 'a'
+    // let res2=employee.filter(function(emp){
+    //     return emp.startsWith('a');
+    // });
+    // console.log(res2);
+    // [ajay, ankit]
+
+    //filter end with a character 'y'
+    let res3=employee.filter(function(emp){
+        return emp.endsWith('y');
+    });
+    console.log(res3);
+    // [vijay, ajay, sanjay]
+
+</script>

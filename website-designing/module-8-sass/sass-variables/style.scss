@@ -1,0 +1,154 @@
+/* sass variables : A variables is used to stored data just like a container and we can re-used this in sass
+
+$bg-color:#24110d;
+$color:#24110d;
+$bg-main-color:#372420;
+$main-color:#372420;
+$btn-bg-color:#fd9649;
+$btn-color:white;
+
+*/
+
+$bg-color:#24110d;
+$color:#24110d;
+$bg-main-color:#372420;
+$main-color:#372420;
+$btn-bg-color:#fd9649;
+$btn-color:white;
+body 
+{
+background-color: $bg-color;
+margin: 0;
+padding: 0;
+}
+
+main 
+{
+width: 90%;
+height: auto;
+background-color: $bg-main-color;
+color: white;
+margin: auto;
+padding: 25px;
+margin-top: 5%;
+border-radius: 10px;
+}
+.navbar 
+{
+width: 90%;
+height: auto;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+}
+.navbar-brand 
+{
+font-size: 26px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.navbar ul 
+{
+margin-left: 35%;
+}
+.navbar ul li 
+{
+display: inline-block;
+padding: 0px 25px;
+font-size: 20px;
+}
+.navbar a 
+{
+text-decoration: none;
+list-style-type: none;
+color: white;
+}
+
+.banner-app
+{
+width: 90%;
+height: auto;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+margin-top: 5%;
+}
+.banner-txt
+{
+width: 60%;
+height: auto;
+padding: 25px;
+margin-top: 5%;
+}
+.banner-img
+{
+width: 25%;
+height: auto;
+padding: 25px;
+margin-top: 5%;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+main 
+{
+width: 80%;
+height: auto;
+background-color: $bg-main-color;
+color: white;
+margin-left: 5%;
+padding: 25px;
+margin-top: 5%;
+border-radius: 10px;
+}
+.navbar ul 
+{
+margin-left: 10%;
+}
+.navbar-brand 
+{
+font-size: 20px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.navbar ul li 
+{
+display: inline-block;
+padding: 0px 5px;
+font-size: 16px;
+}
+}
+
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+main 
+{
+width: 90%;
+height: auto;
+background-color: $bg-main-color;
+color: white;
+margin-left: 5%;
+padding: 25px;
+margin-top: 5%;
+border-radius: 10px;
+}
+.navbar ul 
+{
+margin-left: 15%;
+}
+.navbar-brand 
+{
+font-size: 20px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.navbar ul li 
+{
+display: inline-block;
+padding: 0px 5px;
+font-size: 16px;
+}   
+}

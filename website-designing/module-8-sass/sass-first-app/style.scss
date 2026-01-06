@@ -1,0 +1,63 @@
+$bgmain-color:lightgray;
+$margin:auto;
+$padding:auto;
+$min-margin:5px;
+$min-padding:5px;
+$bg-success:green;
+$bg-info:aqua;
+$bg-primary:blue;
+$bg-secondary:gray;
+$bg-danger:red;
+$text-success:green;
+$text-info:aqua;
+$text-primary:blue;
+$text-secondary:gray;
+$text-danger:red;
+$min-width:80%;
+$max-width:100%;
+$min-height:auto;
+$max-height:auto;
+body 
+{
+margin: 0px;
+padding: 0px;    
+}
+#header-app
+{
+width: $max-width;
+height: $max-height;
+margin: $margin;
+padding: $padding;
+background-color: $bg-primary;   
+margin-top: 0px;
+display: flex;
+flex-wrap: wrap;
+}
+.logo 
+{
+width: 30%;
+height: auto;
+padding: 10px;
+color: $bg-info;
+font-size: 20px;   
+}
+.search-box 
+{
+width: 50%;
+height: auto;    
+}
+.search-box input 
+{
+width: 80%;
+height: auto;
+padding: 10px;
+margin-top: 5%;    
+}
+.cart 
+{
+width: 10%;
+height: auto;
+color: $bg-info;
+font-size: 25px;
+margin-top: 3%;
+}

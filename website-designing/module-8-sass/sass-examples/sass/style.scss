@@ -1,0 +1,10 @@
+// variables 
+$main-color:blue;
+$color:white;
+body {
+  background-color: $main-color;
+}
+h1 
+{
+  color: $color !important;
+}

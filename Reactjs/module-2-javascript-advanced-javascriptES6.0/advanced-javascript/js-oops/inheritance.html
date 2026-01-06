@@ -1,0 +1,48 @@
+<script>
+/* 
+inheritance is a process where a parent class properties access by its child class i.e called inheritance
+or 
+A parent class properties access by its  another class(child class) there we used inheritance.
+
+A => B
+
+Note : inheritance access by parent class properties via super(); method 
+
+class A 
+{
+  constructor()
+  {
+  statements;
+  }
+}
+class B extends A 
+{
+  super();
+  statements;
+}
+
+create an object
+
+*/ 
+
+class Car 
+{
+    constructor(name,year)
+    {
+        this.name=name;
+        this.year=year;
+    }
+}
+class Garage extends Car
+{
+    constructor(name,year,garagename,place)
+    {
+    super(name,year);
+    this.garagename=garagename;
+    this.place=place;
+    }
+}
+
+var obj=new Garage("maruti suzuki",2025,"patel auto garage","Rajkot");
+console.log(obj);
+</script>

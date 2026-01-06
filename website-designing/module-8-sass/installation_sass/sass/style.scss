@@ -1,0 +1,30 @@
+$body-color:rgb(40, 13, 13);
+$min-width:40%;
+$min-height:auto;
+$main-color:skyblue;
+$color:red;
+$margin:auto;
+$padding:25px;
+$marginTop:5%;
+
+body 
+{
+background-color: $body-color;    
+}
+div 
+{
+width: $min-width;
+height: $min-height;
+background-color: $main-color;
+margin: $margin;
+margin-top: $marginTop;
+padding: $padding;    
+}
+h1 
+{
+    color: $color;
+}
+p 
+{
+ padding: $padding;   
+}

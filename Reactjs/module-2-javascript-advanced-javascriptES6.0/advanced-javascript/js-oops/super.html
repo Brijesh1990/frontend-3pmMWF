@@ -1,0 +1,30 @@
+<script>
+/*  
+super : super is a method i.e used to access a parent properties inside of its child class 
+
+  super();
+
+*/ 
+class A  
+{
+    constructor(name,age,pincode)
+    {
+        this.name=name;
+        this.age=age;
+        this.pincode=pincode;
+    }
+}
+class B extends A 
+{
+    constructor(name,age,pincode,education,company)
+    {
+        super(name,age,pincode);
+        this.education=education;
+        this.company=company;
+    }
+}
+var obj=new B("avtar",24,360005,"MTech(IT)","Infosys india pvt ltd");
+console.log(obj);
+
+
+</script>

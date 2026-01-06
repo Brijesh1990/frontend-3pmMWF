@@ -1,0 +1,14 @@
+<script>
+function Employee(name,position,salary,department){
+    this.name=name; //this is a current object
+    this.position=position;
+    this.salary=salary;
+    this.department=department; // this refers to the new object being created
+}
+const res=new Employee("Alice", "Developer", 60000, "IT");
+console.log(res);
+console.log(typeof(res));
+console.log(res.name + " works as a " + res.position + " in the " + res.department + " department with a salary of employee is " + res.salary);
+
+
+</script>

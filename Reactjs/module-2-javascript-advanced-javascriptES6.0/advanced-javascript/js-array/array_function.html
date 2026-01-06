@@ -1,0 +1,93 @@
+<script>
+/*    
+what is array ?
+An array in JavaScript is a data structure used to store multiple
+values in a single variable. Arrays are often used to group related
+data together
+
+let employee=["raj","vijay","ajay","sanjay"];
+console.log(employee);
+
+
+*/
+
+
+let employee=["raj","vijay","ajay","sanjay"];
+console.log(employee);
+
+// list of function in array 
+
+// 1. push() add element at last position
+employee.push("mahesh");
+console.log(employee);
+
+// 2. pop() delete last element
+employee.pop();
+console.log(employee);
+
+// 3. unshift() add element at first position
+employee.unshift("ram");
+console.log(employee);
+
+// 4. shift() delete first element
+employee.shift();
+console.log(employee);
+// 5. length() find length of array
+console.log(employee.length);
+// 6. indexOf() find index of element   
+console.log(employee.indexOf("vijay"));
+
+// 7. toString() convert array to string
+let empString=employee.toString();
+console.log(empString);
+// 8. join() convert array to string with separator
+let empJoin=employee.join(" - ");
+console.log(empJoin);
+// 9. reverse() reverse the array
+employee.reverse();
+console.log(employee);
+// 10. sort() sort the array
+employee.sort(); // ascending order
+console.log(employee);
+
+//11. asort() sort the array in descending order
+
+//12 .ksort() sort the array by key 
+
+//13. krsort() sort the array by key in descending order
+
+//14. slice() extract a section of array
+let empSlice=employee.slice(1,3); // from index 1 to 3
+console.log(empSlice);
+
+//15. splice() add/remove elements from array
+employee.splice(1,1,"suresh"); // at index 1 remove 1 element and add suresh
+console.log(employee);
+
+//16. concat() merge two or more arrays
+let emp2=["ram","sham"];
+let res=employee.concat(emp2);
+console.log(res);
+//17. fill() fill the array with static value
+employee.fill("test");
+console.log(employee);
+//18. includes() check if array contains a value
+console.log(employee.includes("vijay")); // false
+//19. find() find the first element that satisfies a condition
+let found=employee.find(function(element){
+    return element.length > 3;
+});
+console.log(found); // suresh   
+//20. filter() create a new array with elements that satisfy a condition
+let filtered=employee.filter(function(element){
+    return element.length > 3;
+});
+console.log(filtered); // [suresh]
+
+//21. map() create a new array by applying a function to each element
+let mapped=employee.map(function(element){
+    return element.toUpperCase();
+});
+console.log(mapped); // [SURESH, SURESH, SURESH, SURESH]
+
+</script>    

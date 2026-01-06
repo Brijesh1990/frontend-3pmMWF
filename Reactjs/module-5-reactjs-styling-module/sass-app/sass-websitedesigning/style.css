@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+#content {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  padding: 28px;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 26px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

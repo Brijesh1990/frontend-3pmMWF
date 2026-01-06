@@ -1,0 +1,66 @@
+.navbar ul li 
+{
+display: inline-block;
+padding: 15px 20px;
+text-decoration: none;
+}
+.navbar a 
+{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.navbar .logo
+{
+  font-size: 25px;
+  margin-left: 10%;
+}
+.banner 
+{
+z-index: 5;  
+}
+@media only screen and (max-width:580px)
+{
+  .app 
+  {
+    width: 90% !important;
+    height: auto;
+    margin: auto;
+  }
+
+}
+
+
+@media only screen and (max-width:767px)
+{
+  .app 
+  {
+    width: 90% !important;
+    height: auto;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width:1024px)
+{
+  .app 
+  {
+    width: 50% !important;
+    height: auto;
+    margin: auto;
+  }
+
+}
+
+
+@media only screen and (max-width:1440px)
+{
+  .app 
+  {
+    width: 50% !important;
+    height: auto;
+    margin: auto;
+  }
+
+}

@@ -1,0 +1,29 @@
+body 
+{
+margin: 0;
+padding: 0;
+background-color: lightgray;
+}
+.app
+{
+width: 40%;
+height: auto;
+margin: auto;
+margin-top: 5%;
+background-color: white;
+padding: 35px;
+}
+.app p 
+{
+font-size: 28px;    
+}
+.app-icons
+{
+color: green;   
+}
+.app hr 
+{
+width: 30%;
+text-align: left;    
+border: dotted 3px;
+}

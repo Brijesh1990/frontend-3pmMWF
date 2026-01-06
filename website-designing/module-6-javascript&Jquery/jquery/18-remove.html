@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css"> 
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Row Layout using Flexbox */
+.cart-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-header {
+    font-weight: bold;
+    background-color: #e8e8e8;
+    border-radius: 4px 4px 0 0;
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+    font-size: 1.1em;
+}
+
+/* Column Widths (Adjust as needed) */
+.item-col { flex: 4; }
+.price-col { flex: 1.5; text-align: right; }
+.quantity-col { flex: 1.5; text-align: center; }
+.total-col { flex: 1.5; text-align: right; font-weight: bold; }
+.action-col { flex: 1.5; text-align: center; }
+
+/* Input for Quantity */
+.item-quantity {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer/Summary Styling */
+.cart-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.grand-total {
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+
+.total-label {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.total-amount {
+    font-weight: bold;
+    color: #28a745; /* Green color */
+}
+
+.checkout-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+   </style>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<!-- delete or remove data -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#item1").remove();
+    });
+
+        $("#btn2").click(function(){
+        $("#item2").remove();
+    })
+})
+</script> 
+</head>
+<body>
+
+<div class="cart-container">
+    <h1>Your Shopping Cart 🛒</h1>
+
+    <div class="cart-header cart-row">
+        <span class="item-col">Item</span>
+        <span class="price-col">Price</span>
+        <span class="quantity-col">Quantity</span>
+        <span class="total-col">Subtotal</span>
+        <span class="action-col">Action</span>
+    </div>
+
+    <div class="cart-items">
+
+        <div class="cart-item cart-row" id="item1">
+            <div class="item-col">
+                <span class="item-name">Product A - Cool T-Shirt</span>
+            </div>
+            <div class="price-col">$25.00</div>
+            <div class="quantity-col">
+                <input type="number" value="1" min="1" class="item-quantity">
+            </div>
+            <div class="total-col item-subtotal">$25.00</div>
+            <div class="action-col">
+                <button class="delete-btn" id="btn1">Delete</button>
+            </div>
+        </div>
+
+        <div class="cart-item cart-row" id="item2">
+            <div class="item-col">
+                <span class="item-name">Product B - Jeans</span>
+            </div>
+            <div class="price-col">$55.00</div>
+            <div class="quantity-col">
+                <input type="number" value="2" min="1" class="item-quantity">
+            </div>
+            <div class="total-col item-subtotal">$110.00</div>
+            <div class="action-col">
+                <button class="delete-btn" id="btn2">Delete</button>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="cart-footer">
+        <div class="grand-total">
+            <span class="total-label">Grand Total:</span>
+            <span class="total-amount">$135.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+</div>
+
+</body>
+</html>

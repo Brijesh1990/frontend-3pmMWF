@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(40, 13, 13);
+}
+
+div {
+  width: 40%;
+  height: auto;
+  background-color: skyblue;
+  margin: auto;
+  margin-top: 5%;
+  padding: 25px;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  padding: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

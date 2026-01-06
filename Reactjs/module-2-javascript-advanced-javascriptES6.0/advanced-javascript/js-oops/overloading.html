@@ -1,0 +1,28 @@
+<script>
+/*  
+overlodding : overloading is a process where same function pass with different arguments i.e called overloding.
+
+
+*/ 
+
+class A  
+{
+    constructor(name,age,pincode)
+    {
+        this.name=name;
+        this.age=age;
+        this.pincode=pincode;
+    }
+}
+class B extends A 
+{
+    constructor(name,age,pincode,education,company)
+    {
+        super(name,age,pincode);
+        this.education=education;
+        this.company=company;
+    }
+}
+var obj=new B("avtar",24,360005,"MTech(IT)","Infosys india pvt ltd");
+console.log(obj);
+</script>

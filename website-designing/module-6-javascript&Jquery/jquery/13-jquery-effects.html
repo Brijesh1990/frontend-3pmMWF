@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>element selector</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<style>
+.log
+{
+width: 50%;
+height: auto;
+margin: auto;
+padding: 45px;
+margin-top: 5%;
+box-shadow: 1px 2px 4px black;
+text-align: center;
+display: none;
+}
+</style>
+<!-- cdn call jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function(){
+$(".app").css({"width":"60%",height:"auto","margin":"auto"});
+$("#hde").click(function(){
+// $("#para").hide();
+// $("#para").hide(2000);
+// $("#para").hide("slow");
+// $("#para").hide("fast");
+$("#para").hide({
+fx:"slow",
+duration:4000
+});
+
+});
+$("#shw").click(function(){
+$("#para").show({
+fx:"slow",
+duration:500
+});
+});
+
+$("#togg").click(function(){
+$("#para").toggle({
+fx:"slow",
+duration:500
+});
+});
+
+$("#login").click(function(){
+$(".log").toggle({
+fx:"slow",
+duration:500
+});
+});
+})
+</script>
+</head>
+<body>
+
+<div class="app">
+
+<button type="button" id="hde">Hide</button>
+<button type="button" id="shw">Show</button>
+<button type="button" id="togg">Toggle</button>
+<button type="button" id="login">Login</button>
+
+<p id="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro labore voluptatibus perferendis nisi ad, illo temporibus rerum consectetur cum fugit quasi perspiciatis, quam hic officiis reiciendis ducimus culpa excepturi et.</p>
+
+
+</div>
+
+<div class="log">
+<h1>Login here</h1>
+</div>
+
+</body>
+</html>

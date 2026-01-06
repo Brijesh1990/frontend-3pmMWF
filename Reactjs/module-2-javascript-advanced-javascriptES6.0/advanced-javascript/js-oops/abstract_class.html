@@ -1,0 +1,34 @@
+<script>
+/*
+A abstract class is used for data hidding process 
+A abstract class hide some internal data from some external users. 
+
+when we create a abstract class then we can create the object of abstract class access abstract class via inheritance. 
+
+*/
+
+// Note : abstract class is not used in javascript it is used inside of angular (typescript)
+
+abstract class Car 
+{
+    constructor(name,year)
+    {
+        this.name=name;
+        this.year=year;
+    }
+}
+class Garage extends Car
+{
+    constructor(name,year,garagename,place)
+    {
+    super(name,year);
+    this.garagename=garagename;
+    this.place=place;
+    }
+}
+
+var obj=new Garage("maruti suzuki",2025,"patel auto garage","Rajkot");
+console.log(obj);
+
+
+</script>

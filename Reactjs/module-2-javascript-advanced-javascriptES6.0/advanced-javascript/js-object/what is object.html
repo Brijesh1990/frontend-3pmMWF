@@ -1,0 +1,61 @@
+<script>
+/*what is object in javascript ?
+    An object is a collection of properties, and a property is an association between a name (or key) and a value. In JavaScript, objects are used to store various keyed collections and more complex entities. Objects can contain primitive values, other objects, and functions as properties.
+    
+    
+    Example of an object:
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 30,
+        greet: function() {
+            console.log("Hello, " + this.firstName + " " + this.lastName);
+        }
+    };
+
+
+    In this example, 'person' is an object with properties 'firstName', 'lastName', 'age', and a method 'greet'. You can access the properties using dot notation (e.g., person.firstName) or bracket notation (e.g., person['lastName']).
+
+
+
+
+
+*/
+
+
+const employee={
+    name:"Alice",
+    position:"Developer",
+    salary:60000,
+    department:"IT",
+}
+
+// console.log(employee.name); // Accessing property using dot notation
+// console.log(employee.position)
+
+console.log(employee);
+console.log(typeof(employee))
+
+
+how many ways to create object in javascript ?
+
+// 1. Using Object Literal
+const obj1 = {
+    key1: "value1",
+    key2: "value2"
+};
+
+// 2. Using the Object Constructor
+const obj2 = new Object();
+obj2.key1 = "value1";
+obj2.key2 = "value2";
+// 3. Using a Constructor Function
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+const obj3 = new Person("Bob", 25);
+console.log(obj3);
+
+
+</script>

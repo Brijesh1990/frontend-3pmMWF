@@ -1,0 +1,28 @@
+<script>
+    let employee=[
+        {
+            name:"raj",
+            age:25
+        },
+        {
+            name:"vijay",
+            age:30
+        },
+        {
+            name:"ajay",
+            age:22
+        },
+        {
+            name:"sanjay",
+            age:28
+        }
+    ];
+
+    //filter age greater than 25
+    let res=employee.filter(function(emp){
+        return emp.age>25;
+    });
+    console.log(res);
+    // [vijay, sanjay]
+
+</script>

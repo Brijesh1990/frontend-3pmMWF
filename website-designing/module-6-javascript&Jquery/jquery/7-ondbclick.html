@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>on btn click</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+</head>
+<body>
+<button type="button" id="btn">click Me</button>
+<!-- cdn call jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<!-- jquery starter -->
+ <script type="text/javascript">
+ jQuery(document).ready(function(){
+
+    jQuery("#btn").dblclick(function(){
+
+        var a=parseInt(prompt('Enter a value ?'));
+        var b=parseInt(prompt('Enter b value ?'));
+        var c=a+b;
+        alert('The additions :'+c)
+    })
+
+ })   
+ </script>
+
+</body>
+</html>

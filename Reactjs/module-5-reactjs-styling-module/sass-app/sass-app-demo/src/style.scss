@@ -1,0 +1,43 @@
+$bg-dark:black;
+$bg-white:white;
+$bg-success:green;
+$bg-danger:red;
+$bg-primary:blue;
+
+$txt-dark:black;
+$txt-white:white;
+$txt-success:green;
+$txt-danger:red;
+$txt-primary:blue;
+
+$max-width:100%;
+$min-width:50%;
+
+body 
+{
+background-color: $bg-dark;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;    
+}
+#content 
+{
+width: $min-width;
+height: auto;
+margin: auto;
+background-color: $bg-white;
+padding: 28px;
+margin-top: 5%;    
+display: flex;
+flex-wrap: wrap;
+}
+.box 
+{
+width: 100px;
+height:100px;
+margin: 26px;
+background-color: $bg-dark;
+padding: 20px;    
+border-radius: 50%;
+}

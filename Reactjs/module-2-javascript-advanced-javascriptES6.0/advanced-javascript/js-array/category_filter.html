@@ -1,0 +1,27 @@
+<script>
+    let products=[
+        {
+            name:"samsung",
+            category:"electronics"
+        },
+        {
+            name:"apple17",
+            category:"electronics"
+        },
+        {
+            name:"dinning tables",
+            category:"furniture"
+        },
+        {
+            name:"cooker",
+            category:"kitchenware"
+        }
+    ];
+
+    //filter category electronics
+    let res=products.filter(function(prod){
+        return prod.category==="electronics";
+    });
+    console.log(res);
+    // [samsung, apple17]
+</script>

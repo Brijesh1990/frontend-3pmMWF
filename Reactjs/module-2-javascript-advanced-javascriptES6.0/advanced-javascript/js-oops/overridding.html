@@ -1,0 +1,23 @@
+<script>
+/*  
+overriding : overriding is a process where same function pass with same arguments i.e called overriding.
+*/ 
+class A  
+{
+    constructor(name,age,pincode)
+    {
+        this.name=name;
+        this.age=age;
+        this.pincode=pincode;
+    }
+}
+class B extends A 
+{
+    constructor(name,age,pincode)
+    {
+        super(name,age,pincode);
+    }
+}
+var obj=new B("avtar",24,360005);
+console.log(obj);
+</script>

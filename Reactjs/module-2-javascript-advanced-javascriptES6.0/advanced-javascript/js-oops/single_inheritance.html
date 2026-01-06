@@ -1,0 +1,24 @@
+<script>
+// A => B 
+class Car 
+{
+    constructor(name,year)
+    {
+        this.name=name;
+        this.year=year;
+    }
+}
+class Garage extends Car
+{
+    constructor(name,year,garagename,place)
+    {
+    super(name,year);
+    this.garagename=garagename;
+    this.place=place;
+    }
+}
+
+var obj=new Garage("maruti suzuki",2025,"patel auto garage","Rajkot");
+console.log(obj);
+</script>
+

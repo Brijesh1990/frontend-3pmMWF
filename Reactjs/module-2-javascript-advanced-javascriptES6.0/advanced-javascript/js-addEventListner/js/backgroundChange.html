@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<button type="button">ChangeBackgroundColor</button>    
+<script>
+    const btn=document.querySelector("button");
+    // btn.addEventListener("click", function() {
+    //     const colors=["red", "blue", "green", "yellow", "pink", "purple", "orange", "brown", "gray", "cyan"];
+    //     const randomColor= colors[Math.floor(Math.random() * colors.length)];
+    //     document.body.style.backgroundColor=randomColor;
+    // });
+
+
+    btn.addEventListener("click", () => {
+       
+        document.body.style.backgroundColor="lightblue";
+    });
+</script>
+</body>
+</html>

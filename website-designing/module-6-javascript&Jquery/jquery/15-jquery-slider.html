@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+<style>
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+}
+#slider
+{
+width: 100%;
+height: 400px;
+}
+#slide img
+{
+width: 100%;
+height: 400px;
+}
+</style>
+<!-- main CDN  -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://malsup.github.io/min/jquery.cycle2.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#slide").cycle({
+        fx:"zoom",
+        duration:4000
+    });
+})
+</script>
+</head>
+<body>
+
+<div id="slider">
+<div id="slide">
+<img src="https://wowslider.com/sliders/demo-18/data1/images/hongkong1081704.jpg" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHu4uTd-s-MEUUtFnQN6fz-H3RuRP9euZ25Q&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1x6B6jQs119paou7zMMCVMigMrlINp6zXXIEZC7mGdEtNj8wOPbBaK_d8VcXRbYEUBS0&usqp=CAU" />
+<img src="https://wowslider.com/sliders/demo-18/data1/images/shanghai.jpg" />
+</div>
+</div>
+
+</body>
+</html>
