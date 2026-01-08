@@ -1,0 +1,119 @@
+// variables for colors
+$success-color: #28a745;
+$error-color: #dc3545;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+// variables for font sizes
+$base-font-size: 16px;
+$heading-font-size: 24px;
+$subheading-font-size: 20px;
+
+// variables for spacing
+$margin:0px;
+$padding:0px;
+$base-spacing: 10px;
+$large-spacing: 20px;
+$small-spacing: 5px;
+
+// variables for border radius
+$base-border-radius: 4px;
+$large-border-radius: 8px;
+$small-border-radius: 2px;
+
+// variables for box shadows
+$light-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+$medium-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$heavy-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+// variables for breakpoints
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+// reused variables 
+body 
+{
+    font-size: $base-font-size;
+    color: $secondary-color;
+    margin: $margin;
+    padding: $padding;
+}
+
+// create and define nesting in sass 
+
+.navbar{
+    background-color: $primary-color;
+    padding: $large-spacing;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    .logo{
+        font-size: $heading-font-size;
+        color: white;
+        font-weight: bold;
+    }
+    ul{
+        list-style-type: none;
+        margin: 5px;
+        padding: 0px;
+        li{
+            display: inline-block;
+            margin-right: $large-spacing;
+            a{
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+
+// used mixin for content box
+@mixin content-box{
+    width: 70%;
+    height: auto;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 10px;
+    margin-left: 15%;
+    padding: 25px;
+    text-align: center;
+}
+@mixin parent-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin box-style{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 50%;
+
+}
+
+// include it in content class
+.content{
+    @include content-box;
+}
+// include it in parent class
+.parent{
+    @include parent-style;
+}
+// reuse box style
+.box{
+    @include box-style;
+}
