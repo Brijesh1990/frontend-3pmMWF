@@ -1,0 +1,52 @@
+.slider-img {
+  height: 400px;
+  object-fit: cover;
+}
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+
+.review-card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
+
+.review-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+.offer-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .slider-img {
+    height: 300px;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+   aside .card {
+    margin-bottom: 1.5rem;
+  }
+}
