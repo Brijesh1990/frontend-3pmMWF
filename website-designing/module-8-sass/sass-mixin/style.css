@@ -65,4 +65,31 @@ body {
   border-radius: 50%;
 }
 
+.contact-us {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 25px;
+  background-color: #17a2b8;
+  border-radius: 20px;
+  margin-top: 5%;
+  color: white;
+}
+
+.services {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  padding: 25px;
+  background-color: yellow;
+  color: black;
+  margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .services {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

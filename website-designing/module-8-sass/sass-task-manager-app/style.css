@@ -1,3 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  background-color: #fd9649;
+  color: black;
+  top: 0;
+  position: sticky;
+  z-index: 5;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#heading {
+  font-size: 35px;
+}
+
+.msg {
+  font-size: 20px;
+}
+
+.check-box {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.check-box .box {
+  background: #fd9649;
+  width: 30%;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 5%;
+}
+.footer .btn {
+  background-color: #fd9649;
+  width: 20vb;
+  height: 20svb;
+  border-radius: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
