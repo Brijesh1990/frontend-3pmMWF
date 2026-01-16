@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgrey;
+  }
+  .app {
+    padding: 10px;
+    width: 100% !important;
+    background-color: white;
+  } 
+}

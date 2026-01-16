@@ -1,0 +1,45 @@
+what is React routing ?
+React routing refers to the process of managing navigation and rendering different components or views in a React application based on the URL. It allows developers to create single-page applications (SPAs) where users can navigate between different pages without requiring a full page reload.
+
+
+routing is used to navigate one page to another page there we used react router dom package for routing in react application.
+
+React Router is the most popular library for implementing routing in React applications. It provides a set of components and hooks that make it easy to define routes, handle navigation, and manage the application's state based on the URL.
+
+Key features of React Router include:
+1. Declarative Routing: You can define routes using JSX, making it easy to understand and maintain.
+2. Nested Routes: React Router supports nested routes, allowing you to create complex layouts with multiple levels of navigation.
+3. Dynamic Routing: You can create routes that accept parameters, enabling dynamic content rendering based on the URL.
+4. Programmatic Navigation: React Router provides hooks like useHistory and useNavigate to programmatically navigate between routes.
+5. Route Guards: You can implement route guards to protect certain routes based on user authentication or other conditions.
+
+
+To use React Router, you typically install it via npm or yarn:
+
+npm install react-router-dom
+or
+yarn add react-router-dom
+Once installed, you can set up routing in your React application by wrapping your app with the BrowserRouter component and defining routes using the Route component.
+
+
+react router-dom provides some inbuild modules for routing in react application.
+
+Some commonly used components and hooks in React Router include:
+
+1. BrowserRouter as Router: The main component that enables routing in a web application.
+2. Routes: A container for Route components that renders the first matching route.
+3. Route: Used to define a route and specify which component should be rendered for a given path.
+4. Switch: Renders the first matching Route among its children.
+5. Link: Used to create navigational links that allow users to navigate between routes without reloading the page.
+6. useParams: A hook that allows you to access route parameters.
+7. useNavigate: A hook that provides a way to programmatically navigate between routes.
+8. useLocation: A hook that gives access to the current location object, which contains information about the URL.
+9. useHistory: A hook that provides access to the history instance, allowing for navigation and history manipulation.
+
+9. NavLink: Similar to Link, but allows you to apply active styles to the link when it matches the current URL.
+10. Redirect: Used to redirect from one route to another.
+11. Outlet: A component used in nested routing to render child routes.
+12. *: A component used in nested routing to render child routes and search in all components.
+
+Overall, React routing is an essential aspect of building modern web applications with React, enabling seamless navigation and a better user experience.
+
