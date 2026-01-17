@@ -1,0 +1,41 @@
+.box {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  background-color: aqua;
+  padding: 25px;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+
+.box-size {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  background-color: red;
+  padding: 25px;
+  margin-top: 3%;
+  border-radius: 25px;
+}
+
+.opct {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 3%;
+  border-radius: 25px;
+}
+
+.thme {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  background-color: rgba(234, 33, 93, 0.533);
+  padding: 25px;
+  margin-top: 3%;
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

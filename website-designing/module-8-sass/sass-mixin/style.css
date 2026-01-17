@@ -92,4 +92,14 @@ body {
   }
 }
 
+.dark-theme {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  background: black;
+  color: white;
+  padding: 40px;
+  margin-top: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */

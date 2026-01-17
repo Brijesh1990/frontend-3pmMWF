@@ -1,0 +1,74 @@
+// sass function 
+@function add($a,$b)
+{
+    @return $a+$b;
+}
+.box 
+{
+  width: add(100px,50px);  
+  height: auto;
+  margin: auto;
+  background-color: aqua;
+  padding: 25px;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+
+// function with default parameters 
+@function box-sizzing($value:25px)
+{
+  @return $value
+}
+.box-size 
+{
+  width: 20%;
+  height: auto;
+  margin: auto;
+  background-color: red;
+  padding: box-sizzing();
+  margin-top: 3%;
+  border-radius: 25px;
+}
+
+// function for color opacity 
+@function transparent($color,$opacity)
+{
+  @return rgba($color,$opacity)
+} 
+
+.opct
+{
+  width: 20%;
+  height: auto;
+  margin: auto;
+  padding: box-sizzing();
+  background-color: transparent(black,0.3);
+  margin-top: 3%;
+  border-radius: 25px;
+}
+
+// using function condition 
+
+@function theme-color($mode)
+{
+  // used conditions 
+  @if $mode==dark 
+  {
+    @return #000
+  }
+  @else 
+  {
+    @return rgba(234, 33, 93, 0.533)
+  }
+}
+.thme
+{
+  width: 20%;
+  height: auto;
+  margin: auto;
+  background-color: theme-color(darkk);
+  padding: box-sizzing();
+  margin-top: 3%;
+  border-radius: 25px;
+
+}

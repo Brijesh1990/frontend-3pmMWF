@@ -169,6 +169,37 @@ color: white;
 }
 
 
+// mixin as condition
+@mixin theme($mode)
+{
+    @if $mode==dark {
+        
+        width: 50%;
+        height: auto;
+        margin: auto;
+        background: black;
+        color: white;
+        padding: 40px;
+        margin-top: 5%;
+    }
+    @else 
+    {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        background: #007bff;
+        color: #ffc107;
+        padding: 25px;
+        margin-top: 5%;
+    }
+}
+
+.dark-theme 
+{
+  @include theme(dark)  
+}
+
+
 // mixin with conditional logic (@if) 
 @mixin change-theme($mode)
 {
