@@ -1,0 +1,60 @@
+{
+  "addfeedback": [
+    {
+      "id": "82f2",
+      "name": "meet",
+      "email": "meet@gmil.com",
+      "phone": "9998003879",
+      "rating": "5",
+      "comment": "good keep it up!"
+    },
+    {
+      "id": "cbcc",
+      "name": "devangi",
+      "email": "devangi@gmail.com",
+      "phone": "9998003879",
+      "rating": "5",
+      "comment": "good"
+    },
+    {
+      "id": "6cb1",
+      "name": "raj",
+      "email": "raj001@gmil.com",
+      "phone": "9173357217",
+      "rating": "5",
+      "comment": "good"
+    },
+    {
+      "id": "8f74",
+      "name": "milan balas",
+      "email": "milan@gmail.com",
+      "phone": "998003879",
+      "rating": "5",
+      "comment": "good"
+    },
+    {
+      "id": "0210",
+      "name": "hiral",
+      "email": "hiral007@gmail.com",
+      "phone": "992121212121",
+      "rating": "5",
+      "comment": "good"
+    },
+    {
+      "id": "933b",
+      "name": "kumar",
+      "email": "kumar@gmail.com",
+      "phone": "9912154545",
+      "rating": "5",
+      "comment": "average"
+    },
+    {
+      "id": "2508",
+      "name": "lokesh",
+      "email": "lokesh@gmail.com",
+      "phone": "91212121212",
+      "rating": "5",
+      "comment": "below average"
+    }
+  ]
+}
