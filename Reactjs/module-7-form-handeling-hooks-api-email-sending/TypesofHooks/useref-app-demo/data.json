@@ -55,6 +55,14 @@
       "phone": "91212121212",
       "rating": "5",
       "comment": "below average"
+    },
+    {
+      "id": "76ad",
+      "name": "milan",
+      "email": "milan@gmail.com",
+      "phone": "8512251556",
+      "rating": "5",
+      "comment": "go for it"
     }
   ]
 }

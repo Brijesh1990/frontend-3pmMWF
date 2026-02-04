@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "id": "8b9b",
+      "taskname": "crud app in react js",
+      "assign": "Brijesh",
+      "added_date": "2026-02-04",
+      "details": "crud app in react js completed it within 1 day"
+    },
+    {
+      "id": "d4ee",
+      "taskname": "angular app in api call",
+      "assign": "Milan",
+      "added_date": "2026-02-04",
+      "details": "done it in 2 days"
+    },
+    {
+      "id": "1d31",
+      "taskname": "laravel sanctam api",
+      "assign": "Devanshi",
+      "added_date": "2026-02-04",
+      "details": "laravel"
+    }
+  ],
+  "assign-to": [
+    {
+      "employeename": "Brijesh"
+    },
+    {
+      "employeename": "Milan"
+    },
+    {
+      "employeename": "Devanshi"
+    },
+    {
+      "employeename": "Rajesh"
+    },
+    {
+      "employeename": "shalini patel"
+    },
+    {
+      "employeename": "Hetwi patel"
+    }
+  ]
+}

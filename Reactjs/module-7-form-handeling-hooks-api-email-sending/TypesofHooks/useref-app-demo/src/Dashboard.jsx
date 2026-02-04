@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import CountData from "./CountData";
 export default function AdminDashboard() {
   return (
     <div className="min-h-screen grid grid-cols-1 md:grid-cols-[260px_1fr] bg-gray-100">
@@ -52,11 +53,11 @@ export default function AdminDashboard() {
               gif="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
             />
 
-            <DashboardCard
-              title="Sales"
-              value="$8,430"
+            <Link to='/admin-login/manage-feedback'><DashboardCard
+              title="Feedback"
+              value={<CountData />}
               gif="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif"
-            />
+            /> </Link>
 
             <DashboardCard
               title="Orders"

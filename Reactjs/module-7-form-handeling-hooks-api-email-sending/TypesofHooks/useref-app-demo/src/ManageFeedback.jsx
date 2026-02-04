@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import CountData from "./CountData";
 export default function ManageFeedback() {
 //destructuring of state
 const[data,setData]=useState(""); 
@@ -68,7 +69,7 @@ Manage All Feedback
 </h3>
 
 <button className="text-sm bg-red-600 text-white px-4 py-1 rounded-full">
-Total Feedback <span className="ml-1 font-bold  text-white text-xl rounded-full p-1">{data.length}</span>
+Total Feedback <span className="ml-1 font-bold  text-white text-xl rounded-full p-1">{<CountData />}</span>
 </button>
 </div>
 
