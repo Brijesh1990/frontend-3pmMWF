@@ -2,7 +2,8 @@ import React,{useState,useEffect, useRef} from 'react'
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
-export default function ContentApp() {
+import HeaderApp from './HeaderApp';
+export default function AddTask() {
     // fetch data inside of dropdown 
     const[emp,setEmp]=useState("");
     const[data,setData]=useState("");
@@ -54,7 +55,15 @@ export default function ContentApp() {
 
     
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10">
+    <>
+  <div className='w-180 p-15 mt-15 bg-white mx-auto'>
+  <HeaderApp />
+  <main className="max-w-6xl mx-auto px-6 py-10">
+  {/* Header */}
+  <h1 className="text-3xl font-semibold mb-8">
+    Dashboard Overview
+  </h1>
+
   {/* Add Task Section */}
   <section className="space-y-10">
     <h1 className="sm:text-2xl md:text-md text-4xl  font-semibold">Add New Tasks Here</h1>
@@ -163,6 +172,7 @@ export default function ContentApp() {
 
   </section>
 </main>
-
+</div>
+</>
   )
 }

@@ -29,14 +29,18 @@ function toggleSidebar() {
       </button>
     </div>
     <nav className="p-4 space-y-3">
-      <a href="#" className="block rounded px-3 py-2 hover:bg-slate-700">
+      <a href="/" className="block rounded px-3 py-2 hover:bg-slate-700">
         Dashboard
       </a>
-      <Link to="/" className="block rounded px-3 py-2 hover:bg-slate-700">
+      <Link to="/add-task" className="block rounded px-3 py-2 hover:bg-slate-700">
        Add Task
       </Link>
       <Link to="/" className="block rounded px-3 py-2 hover:bg-slate-700">
-        Total Task <span className='bg-red-600 text-white p-1 rounded-full'><CountApp /></span>
+      Add Students
+      </Link>
+
+      <Link to="/" className="block rounded px-3 py-2 hover:bg-slate-700">
+      Add Attendance
       </Link>
       <Link to="/" className="block rounded px-3 py-2 hover:bg-slate-700">
        Logout ?
