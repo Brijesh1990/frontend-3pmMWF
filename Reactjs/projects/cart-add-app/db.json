@@ -1,11 +1,61 @@
 {
-    "categories":[],
-    "products":[],
-    "cart":[],
-    "order":[],
-    "bills":[],
-    "customers":[],
-    "feedback":[],
-    "reviews":[],
-    "contact-us":[]
+  "categories": [
+    {
+      "id": "f77a",
+      "categoryname": "vegetables",
+      "status": "active",
+      "description": "good for health",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC5PiUDlD4g0E-doYGaMNitivgTiY1x4csZw&s"
+    },
+    {
+      "id": "13e2",
+      "categoryname": "fruits",
+      "status": "active",
+      "description": "good for health",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-Wzl5Dq6K2jyuBKMj0em4G6bpfGBBEDNAA&s"
+    },
+    {
+      "id": "ff51",
+      "categoryname": "packed",
+      "status": "active",
+      "description": "good",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDzWGK_QDk5yLyXOYM-pjwPpDHIjrQW7gKwg&s"
+    },
+    {
+      "id": "012c",
+      "categoryname": "milk",
+      "status": "active",
+      "description": "good",
+      "imgUrl": "https://img.freepik.com/free-vector/milk-pouring-down-making-big-splashes_1268-15465.jpg?semt=ais_user_personalization&w=740&q=80"
+    }
+  ],
+  "products": [
+    {
+      "id": "a7d2",
+      "productname": "lady finger",
+      "categoryname": "vegetables",
+      "price": "25",
+      "qty": "100",
+      "status": "active",
+      "description": "good for green vegetables",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rq5L5C0y1QPrPpgi5prFu2TnoM8bCPJzMA&s"
+    },
+    {
+      "id": "ff13",
+      "productname": "fglower",
+      "categoryname": "vegetables",
+      "price": "30",
+      "qty": "50",
+      "status": "active",
+      "description": "good for rasa vala sabli",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDiiH3jptE_pZKuC8Zu2yxWoncHBc_Ti4UA&s"
+    }
+  ],
+  "cart": [],
+  "order": [],
+  "bills": [],
+  "customers": [],
+  "feedback": [],
+  "reviews": [],
+  "contact-us": []
 }

@@ -1,7 +1,7 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import { Link } from 'react-router-dom';
 export default function HeaderApp() {
-    // toggler sidebar
+// toggler sidebar
 function toggleSidebar() {
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
@@ -9,7 +9,7 @@ const overlay = document.getElementById('overlay');
 sidebar.classList.toggle('-translate-x-full');
 overlay.classList.toggle('hidden');
 }
-
+  const [open, setOpen] = useState(false);
   return (
     <>
   {/* Overlay */}
@@ -30,21 +30,19 @@ overlay.classList.toggle('hidden');
       </button>
     </div>
     <nav className="p-4 space-y-4">
-      <a href="#" className="block text-gray-700 hover:text-black">
+      <Link to="/" className="block text-gray-700 hover:text-black">
         Home
-      </a>
-      <a href="#" className="block text-gray-700 hover:text-black">
+      </Link>
+      <Link to="/shop-now" className="block text-gray-700 hover:text-black">
         Shop
-      </a>
-      <a href="#" className="block text-gray-700 hover:text-black">
-        Categories
-      </a>
-      <a href="#" className="block text-gray-700 hover:text-black">
+      </Link>
+     
+      <Link to="/about-us" className="block text-gray-700 hover:text-black">
         About
-      </a>
-      <a href="#" className="block text-gray-700 hover:text-black">
+      </Link>
+      <Link to="/contact-us" className="block text-gray-700 hover:text-black">
         Contact
-      </a>
+      </Link>
     </nav>
   </aside>
   {/* Navbar */}
@@ -89,20 +87,44 @@ overlay.classList.toggle('hidden');
 
       </div>
       {/* Desktop Nav */}
-      <nav className="hidden md:flex gap-6 text-gray-600">
-        <a href="#" className="hover:text-black">
-          Home
-        </a>
-        <a href="#" className="hover:text-black">
-          Shop
-        </a>
-        <a href="#" className="hover:text-black">
-          Categories
-        </a>
-        <a href="#" className="hover:text-black">
-          Contact
-        </a>
-      </nav>
+     <nav className="hidden md:flex gap-6 text-gray-600 items-center relative z-10">
+      <Link to="/" className="hover:text-black">
+        Home
+      </Link>
+      <Link to="/shop-now" className="hover:text-black">
+        Shop
+      </Link>
+      <Link to="/contact-us" className="hover:text-black">
+        Contact
+      </Link>
+
+      {/* Login Dropdown */}
+      <div className="relative">
+        <button
+          onClick={() => setOpen(!open)}
+          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800"
+        >
+          Login AS
+        </button>
+
+        {open && (
+          <div className="absolute right-0 mt-2 w-44 bg-white border rounded shadow-lg">
+            <Link to="/login"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Login as Customer
+            </Link>
+            <Link to
+              href="/admin-login"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Login as Admin
+            </Link>
+          </div>
+        )}
+      </div>
+    </nav>
+
       {/* Right */}
       <div className="flex items-center gap-4">
         {/* Cart */}

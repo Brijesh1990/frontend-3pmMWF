@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "json-server":"json-server --watch db.json --port 8000"
+    "json-server": "json-server --watch db.json --port 8000"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -17,6 +17,7 @@
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-flash-message": "^1.0.8",
     "react-router-dom": "^7.13.0",
     "sweetalert2": "^11.26.18",
     "tailwindcss": "^4.1.18"

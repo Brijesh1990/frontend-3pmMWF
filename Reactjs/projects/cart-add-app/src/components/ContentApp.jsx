@@ -1,101 +1,74 @@
+import React,{useState,useEffect} from "react";
+import axios from "axios";
 import { Heart } from "lucide-react";
-
-const categories = [
-  { name: "Veg", bg: "bg-green-400", icon: "🥕" },
-  { name: "Fruits", bg: "bg-yellow-400", icon: "🍍" },
-  { name: "Packed", bg: "bg-orange-400", icon: "📦" },
-  { name: "Milk", bg: "bg-lime-400", icon: "🥛" },
-];
-
-const products = [
-  {
-    name: "Tomato",
-    qty: "12 pcs · 500 to 900 gm",
-    price: 35,
-    image: "https://png.pngtree.com/png-clipart/20230129/original/pngtree-red-fresh-tomato-with-green-leaf-png-image_8933861.png",
-  },
-  {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://png.pngtree.com/png-clipart/20250203/original/pngtree-lady-finger-png-image_20347561.png",
-  },
- //   add 10 more products in category
- {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://png.pngtree.com/png-clipart/20250203/original/pngtree-lady-finger-png-image_20347561.png",
-  },
-  {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://png.pngtree.com/png-clipart/20250203/original/pngtree-lady-finger-png-image_20347561.png",
-  },
-  {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://png.pngtree.com/png-clipart/20220911/original/pngtree-eggplant-fresh-vegetable-brinjal-food-png-image_8538501.png",
-  },
-  {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc4AdyeeNmwbKCuA_tugt3ldfqRyixrJSayw&s",
-  },
-  {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDiiH3jptE_pZKuC8Zu2yxWoncHBc_Ti4UA&s",
-  },
-  {
-    name: "Lady finger",
-    qty: "1 Kg · 500 to 1000 gm",
-    price: 25,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO2HNY0z-e84FSOoRBeZUgddlhHbK-HYL1kA&s",
-  },
-
-];
-
 export default function ContentApp() {
+// fetch category data from api
+ const[categorries,setCat]=useState("");
+//  fetch products here
+const[products,setProducts]=useState("");
+ 
+//  category
+  useEffect(()=>{
+    axios.get(`http://localhost:8000/categories`).then((response)=>{
+       setCat(response.data);
+    })
+ 
+ },[categorries]);
+
+
+ 
+//  products
+  useEffect(()=>{
+    axios.get(`http://localhost:8000/products`).then((response)=>{
+       setProducts(response.data);
+    })
+ 
+ },[products]);
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 mb-20">
-
       {/* Categories */}
-      <div className="grid grid-cols-4 gap-4 mb-10">
-        {categories.map((cat, i) => (
-          <div key={i} className="text-center">
-            <div
-              className={`${cat.bg} rounded-2xl h-20 flex items-center justify-center shadow-md`}
-            >
-              <span className="text-3xl text-white">{cat.icon}</span>
-            </div>
-            <p className="mt-2 font-medium">{cat.name}</p>
-          </div>
-        ))}
-      </div>
+   
+   <div className="grid grid-cols-4 gap-4 mb-10">
+{categorries && categorries.map((cat,i)=>{
+return (
+<>
+<div key={i} className="text-center">
+<div
+className={`${cat.bg} rounded-2xl h-20 flex items-center justify-center shadow-md`}
+>
+<span className="text-3xl text-white"><img src={cat.imgUrl} style={{width:"100px", height:"50px"}}/></span>
+</div>
+<p className="mt-2 font-medium">{cat.categoryname}</p>
+</div>
+
+</>
+)
+})}
+
+</div>
+
 
       {/* Products */}
       <div className="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3  gap-6">
-        {products.map((p, i) => (
-          <div
+        {products && products.map((p,i)=>{
+          return(
+            <>
+ <div
             key={i}
             className="bg-white rounded-2xl shadow-md border p-4"
           >
             {/* Image */}
             <div className="h-40 flex items-center justify-center">
               <img
-                src={p.image}
-                alt={p.name}
+                src={p.productimage}
+                alt={p.productimage}
                 className="h-full object-contain"
               />
             </div>
 
             {/* Info */}
-            <h3 className="text-xl text-gray-700 mt-4">{p.name}</h3>
+            <h3 className="text-xl text-gray-700 mt-4">{p.productname}</h3>
             <p className="text-gray-400 text-sm">{p.qty}</p>
 
             <hr className="my-4 border-green-300" />
@@ -115,7 +88,10 @@ export default function ContentApp() {
               </div>
             </div>
           </div>
-        ))}
+          </>)
+        })}
+         
+    
       </div>
     </div>
   );
