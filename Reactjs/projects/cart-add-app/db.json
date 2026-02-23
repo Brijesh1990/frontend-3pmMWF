@@ -49,9 +49,60 @@
       "status": "active",
       "description": "good for rasa vala sabli",
       "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDiiH3jptE_pZKuC8Zu2yxWoncHBc_Ti4UA&s"
+    },
+    {
+      "id": "d2f5",
+      "productname": "tommato",
+      "categoryname": "vegetables",
+      "price": "45",
+      "qty": "10",
+      "status": "active",
+      "description": "good for health",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsPki7r3H2dWWDsZuRHvdJ4YtfPRyCnpmuQ&s"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "9d59",
+      "categoryname": "vegetables",
+      "productname": "tommato",
+      "price": "45",
+      "qty": "10",
+      "status": "active",
+      "description": "good for health",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsPki7r3H2dWWDsZuRHvdJ4YtfPRyCnpmuQ&s"
+    },
+    {
+      "id": "185c",
+      "categoryname": "vegetables",
+      "productname": "tommato",
+      "price": "45",
+      "qty": "10",
+      "status": "active",
+      "description": "good for health",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsPki7r3H2dWWDsZuRHvdJ4YtfPRyCnpmuQ&s"
+    },
+    {
+      "id": "69d8",
+      "categoryname": "vegetables",
+      "productname": "lady finger",
+      "price": "25",
+      "qty": "100",
+      "status": "active",
+      "description": "good for green vegetables",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rq5L5C0y1QPrPpgi5prFu2TnoM8bCPJzMA&s"
+    },
+    {
+      "id": "43c8",
+      "categoryname": "vegetables",
+      "productname": "lady finger",
+      "price": "25",
+      "qty": "100",
+      "status": "active",
+      "description": "good for green vegetables",
+      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rq5L5C0y1QPrPpgi5prFu2TnoM8bCPJzMA&s"
+    }
+  ],
   "order": [],
   "bills": [],
   "customers": [],

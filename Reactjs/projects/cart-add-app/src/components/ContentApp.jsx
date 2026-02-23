@@ -1,9 +1,11 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
 import { Heart } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 export default function ContentApp() {
 // fetch category data from api
  const[categorries,setCat]=useState("");
+ const navigate=useNavigate();
 //  fetch products here
 const[products,setProducts]=useState("");
  
@@ -80,8 +82,8 @@ className={`${cat.bg} rounded-2xl h-20 flex items-center justify-center shadow-m
               </span>
 
               <div className="flex items-center gap-3">
-                <button className="border rounded-lg px-4 py-1 font-medium hover:bg-gray-100">
-                  Add +
+                <button type="button" onClick={()=>navigate(`/products-details/${p.id}`)} className="border rounded-lg px-4 py-1 font-medium hover:bg-gray-100">
+                  Details
                 </button>
 
                 <Heart className="text-green-400 cursor-pointer" />
