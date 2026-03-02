@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
+import CountApp from './CountApp';
 export default function HeaderApp() {
 // toggler sidebar
 function toggleSidebar() {
@@ -64,7 +65,7 @@ overlay.classList.toggle('hidden');
               strokeLinejoin="round"
               strokeWidth={2}
               d="M4 6h16M4 12h16M4 18h16"
-            />
+            /> 
           </svg>
         </button>
         {/* Logo */}
@@ -116,7 +117,7 @@ overlay.classList.toggle('hidden');
             </Link>
             <Link to
               href="/admin-login"
-              className="block px-4 py-2 hover:bg-gray-100"
+              className="block px-2 py-1 hover:bg-gray-100"
             >
               Login as Admin
             </Link>
@@ -128,22 +129,9 @@ overlay.classList.toggle('hidden');
       {/* Right */}
       <div className="flex items-center gap-4">
         {/* Cart */}
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-green-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6M17 13l1.5 6M6 21h12"
-            />
-          </svg>
-        </button>
+        <Link to='/view-cart'><button className='text-xl'>
+        🛒 <span className='flex-inline rounded-full text-white  bg-red-600 p-1 text-sm'><CountApp /></span>
+        </button></Link>
         {/* Avatar */}
         <img
           src="https://i.pravatar.cc/40"
