@@ -8,6 +8,8 @@ import ContactUs from './components/ContactUs'
 import LoginPage from './components/LoginApp'
 import ProductsDetails from './components/ProductsDetails'
 import ViewCart from './components/ViewCart'
+import DeleteCart from './components/DeleteCart'
+import CheckoutApp from './components/CheckoutApp'
 // admin panel 
 import AdminLogin from './components/admin/AdminLogin'
 import AdminDashboard from './components/admin/AdminDashboard'
@@ -26,6 +28,8 @@ createRoot(document.getElementById('root')).render(
 <Route path='/shop-now' element={<ShopNow />} />
 <Route path='/products-details/:id' element={<ProductsDetails />} />
 <Route path='/view-cart' element={<ViewCart />} />
+<Route path='/view-cart/:id' element={<DeleteCart />} />
+<Route path='/checkout-here' element={<CheckoutApp />} />
 <Route path='/contact-us' element={<ContactUs />} />
 <Route path='/login' element={<LoginPage />} />
 <Route path='/admin-login' element={<AdminLogin />} />

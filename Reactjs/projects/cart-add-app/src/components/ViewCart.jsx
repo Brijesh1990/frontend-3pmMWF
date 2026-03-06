@@ -6,6 +6,7 @@ import { useNavigate, Link, useParams } from "react-router-dom";
 export default function ViewCart() {
 // fetch cart data from api
 const[cart,setCart]=useState([]);
+const navigate=useNavigate();
 useEffect(()=>{
 axios.get(`http://localhost:8000/cart`).then((response)=>{
 setCart(response.data);
@@ -71,7 +72,7 @@ className="w-12 text-center outline-none"
 
 {/* Remove */}
 <div className="md:col-span-6 flex justify-end">
-<button className="text-red-500 hover:underline text-sm">
+<button type="button" onClick={()=>navigate(`/view-cart/${items.id}`)} className="text-red-500 hover:underline text-sm">
 Remove
 </button>
 </div>
@@ -96,9 +97,9 @@ Remove
 </div>
 <div className="border-t border-gray-300 my-3"></div>
 
-<button className="w-full mt-6 bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition">
+<Link to='/checkout-here'><button className="w-full mt-6 bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition">
 Proceed to Checkout
-</button>
+</button></Link>
 
 </div>
 
