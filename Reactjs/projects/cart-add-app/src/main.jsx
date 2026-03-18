@@ -16,6 +16,8 @@ import AdminDashboard from './components/admin/AdminDashboard'
 import AddProducts from './components/admin/AddProducts'
 import AddCategory from './components/admin/AddCategory'
 import ManageCategory from './components/admin/ManageCategory'
+import DeleteCategory from './components/admin/DeleteCategory'
+import EditCategory from './components/admin/EditCategory'
 import ManageCustomers from './components/admin/ManageCustomers'
 import ManageOrders from './components/admin/ManageOrders'
 import ManageProducts from './components/admin/ManageProducts'
@@ -35,7 +37,10 @@ createRoot(document.getElementById('root')).render(
 <Route path='/admin-login' element={<AdminLogin />} />
 <Route path='/admin-login/dashboard' element={<AdminDashboard />} />
 <Route path='/admin-login/addcategory' element={<AddCategory />} />
-<Route path='/admin-login/managecategory' element={<ManageCategory />} />
+<Route path='/admin-login/manage-category' element={<ManageCategory />} />
+<Route path='/admin-login/delete-category/:id' element={<DeleteCategory />} />
+<Route path='/admin-login/edit-category/:id' element={<EditCategory />} />
+
 <Route path='/admin-login/addproducts' element={<AddProducts />} />
 <Route path='/admin-login/manage-customers' element={<ManageCustomers />} />
 <Route path='/admin-login/manage-orders' element={<ManageOrders />} />

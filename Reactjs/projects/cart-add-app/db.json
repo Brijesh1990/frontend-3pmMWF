@@ -1,32 +1,18 @@
 {
   "categories": [
     {
-      "id": "f77a",
-      "categoryname": "vegetables",
+      "categoryname": "mava malai",
       "status": "active",
-      "description": "good for health",
-      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC5PiUDlD4g0E-doYGaMNitivgTiY1x4csZw&s"
+      "description": "good for health just chill kulfi",
+      "imgUrl": "https://www.havmor.com/sites/default/files/styles/502x375/public/gallery/mava-malai-1.jpg?itok=uqLBkCii",
+      "id": "f77a"
     },
     {
-      "id": "13e2",
-      "categoryname": "fruits",
+      "categoryname": "fruits&nuts",
       "status": "active",
-      "description": "good for health",
-      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-Wzl5Dq6K2jyuBKMj0em4G6bpfGBBEDNAA&s"
-    },
-    {
-      "id": "ff51",
-      "categoryname": "packed",
-      "status": "active",
-      "description": "good",
-      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDzWGK_QDk5yLyXOYM-pjwPpDHIjrQW7gKwg&s"
-    },
-    {
-      "id": "012c",
-      "categoryname": "milk",
-      "status": "active",
-      "description": "good",
-      "imgUrl": "https://img.freepik.com/free-vector/milk-pouring-down-making-big-splashes_1268-15465.jpg?semt=ais_user_personalization&w=740&q=80"
+      "description": "good for health icecream chocalty",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKFhYG71evOgUwaYClQWo41cP16Wllsnb2g&s",
+      "id": "13e2"
     }
   ],
   "products": [
@@ -73,27 +59,7 @@
       "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsPki7r3H2dWWDsZuRHvdJ4YtfPRyCnpmuQ&s"
     },
     {
-      "id": "0001",
-      "categoryname": "vegetables",
-      "productname": "fglower",
-      "price": "30",
-      "qty": "50",
-      "status": "active",
-      "description": "good for rasa vala sabli",
-      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDiiH3jptE_pZKuC8Zu2yxWoncHBc_Ti4UA&s"
-    },
-    {
-      "id": "b918",
-      "categoryname": "vegetables",
-      "productname": "lady finger",
-      "price": "25",
-      "qty": "100",
-      "status": "active",
-      "description": "good for green vegetables",
-      "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rq5L5C0y1QPrPpgi5prFu2TnoM8bCPJzMA&s"
-    },
-    {
-      "id": "a431",
+      "id": "a53d",
       "categoryname": "vegetables",
       "productname": "fglower",
       "price": "30",
@@ -103,7 +69,20 @@
       "productimage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDiiH3jptE_pZKuC8Zu2yxWoncHBc_Ti4UA&s"
     }
   ],
-  "order": [],
+  "orders": [
+    {
+      "id": "0a54",
+      "fname": "brijesh",
+      "lname": "pandey",
+      "email": "b@gmail.com",
+      "phone": "9998003879",
+      "city": "rajkot",
+      "state": "gujrat",
+      "zip": "360005",
+      "country": "india",
+      "address": "rajkot"
+    }
+  ],
   "bills": [],
   "customers": [],
   "feedback": [],

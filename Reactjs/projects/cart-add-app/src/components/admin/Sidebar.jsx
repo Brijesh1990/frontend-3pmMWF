@@ -46,7 +46,7 @@ Dashboard
     </a>
 
     <a
-      href="/admin-login/managecategory"
+      href="/admin-login/manage-category"
       className="block pl-14 pr-6 py-2 text-sm hover:bg-gray-700 hover:text-white transition"
     >
       ⚙️ Manage Category

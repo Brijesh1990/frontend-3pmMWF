@@ -3,10 +3,11 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Logout from "./Logout";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 export default function ManageCategory() {
   // fetch category data from api
  const[category,setCat]=useState("");
-
+ const navigate=useNavigate();
   useEffect(()=>{
     axios.get(`http://localhost:8000/categories`).then((response)=>{
        setCat(response.data);
@@ -87,10 +88,10 @@ export default function ManageCategory() {
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700"><img src={item.imgUrl} alt="category photo" className="w-15" /></td>
                      
                       <td className="px-6 py-4 whitespace-nowrap text-sm">
-                        <button className="px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition mr-2">
+                        <button onClick={()=>navigate(`/admin-login/edit-category/${item.id}`)} className="px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition mr-2">
                           Edit
                         </button>
-                        <button className="px-3 py-1 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                        <button onClick={()=>navigate(`/admin-login/delete-category/${item.id}`)} className="px-3 py-1 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
                           Delete
                         </button>
                       </td>
