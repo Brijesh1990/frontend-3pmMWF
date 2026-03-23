@@ -1,0 +1,38 @@
+.app
+{
+width: 60%;
+height: auto;
+margin: auto;
+margin-top: 8%;
+
+}
+.parent 
+{
+width: 100%;
+height: auto;
+margin: auto;
+display: flex;
+flex-wrap: wrap;    
+}
+.app button 
+{
+width: 18%;
+height: auto;
+margin: 5px;
+padding: 12px;
+border: 0;
+font-size: 19px;  
+}
+.child-app
+{
+width: 21%;
+height: auto;
+margin: 2px;
+padding: 10px;  
+text-align: center;
+}
+.child-app img 
+{
+width: 70%;
+height: 120px;  
+}

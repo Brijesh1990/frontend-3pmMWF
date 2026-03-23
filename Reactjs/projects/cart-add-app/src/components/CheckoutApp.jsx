@@ -23,10 +23,22 @@ const state=useRef("");
 const zip=useRef("");
 const country=useRef("");
 const address=useRef("");
+const productimage=useRef("");
+const productname=useRef("");
+const categoryname=useRef("");
+const price=useRef("");
+const subtotal=useRef("");
 const navigate=useNavigate("");
 // create a form Handeling method 
 const addOrderData=(event)=>{
 event.preventDefault();
+const products=cart.map((item) => ({
+    productname: item.productname,
+    productimage: item.productimage,
+    price: item.price,
+    categoryname: item.categoryname
+  }));
+
 var insertData={
 fname:fname.current.value, 
 lname:lname.current.value,
@@ -37,7 +49,8 @@ state:state.current.value,
 zip:zip.current.value,
 country:country.current.value,
 address:address.current.value,
-
+products: products,
+subtotal:subtotal.current.value,
 }
 // call api to add data 
 axios.post(`http://localhost:8000/orders`,insertData).then(()=>{
@@ -47,7 +60,7 @@ text: "Your Category  updated.",
 icon: "success"
 });
 })
-navigate('/mange-orders');
+navigate('/manage-orders');
 event.target.reset();
 }
 return (
@@ -125,15 +138,15 @@ return(
 <div key={items.id} className="flex items-center gap-4 border-b pb-4">
 <img
 src={items.productimage}
-alt={items.productname}
-className="w-16 h-16 object-cover rounded-lg"
+alt={items.productname} ref={productimage}
+className="w-16 h-16 object-cover rounded-lg" 
 />
 <div className="flex-1">
-<h4 className="font-medium">{items.productname}</h4>
-<p className="text-sm text-gray-500">{items.categoryname}</p>
+<h4 className="font-medium"><input type="text" value={items.productname} ref={productname} className="border:0" readOnly/></h4>
+<p className="text-sm text-gray-500"><input type='text' className="border:0" readOnly value={items.categoryname} ref={categoryname} /></p>
 </div>
 <div className="font-semibold text-indigo-600">
-Rs.{items.price}
+Rs.<input type='text' className="border:0" readOnly value={items.price} ref={price} />
 </div>
 </div>
 )
@@ -144,8 +157,7 @@ Rs.{items.price}
 <div className="border-t mt-6 pt-4 space-y-2">
 <div className="flex justify-between">
 <span>Subtotal</span>
-<span>
-Rs.{cart.reduce((acc,cart)=>acc + Number(cart.price || 0),0).toFixed(2)}
+<span className="flex"><input type="text" className="border-0 ml-0 bg-amber-0 text-end" readOnly value={cart.reduce((acc,cart)=>acc + Number(cart.price || 0),0).toFixed(2)} ref={subtotal} />
 </span>
 </div>
 
@@ -156,7 +168,7 @@ Rs.{cart.reduce((acc,cart)=>acc + Number(cart.price || 0),0).toFixed(2)}
 </span>
 </div>
 
-<button className="w-full mt-6 bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition">
+<button type="submit" className="w-full mt-6 bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition">
 Place Order
 </button>
 </div>
