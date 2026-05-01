@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#354b42",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9fb",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-bright": "#f7f9fb",
+                    "surface-tint": "#2b6954",
+                    "on-primary-container": "#80bea6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#0b513d",
+                    "tertiary": "#4f1f19",
+                    "primary-fixed-dim": "#95d3ba",
+                    "on-tertiary-fixed": "#380d08",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-container-high": "#e6e8ea",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#bfc9c3",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface": "#f7f9fb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#091f18",
+                    "secondary": "#4c6359",
+                    "surface-dim": "#d8dadc",
+                    "on-surface-variant": "#404944",
+                    "on-primary-fixed": "#002117",
+                    "on-secondary-container": "#50685d",
+                    "surface-container": "#eceef0",
+                    "on-tertiary-fixed-variant": "#6e372f",
+                    "secondary-container": "#cce6d9",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-background": "#191c1e",
+                    "outline": "#707974",
+                    "inverse-primary": "#95d3ba",
+                    "primary": "#003527",
+                    "on-surface": "#191c1e",
+                    "on-tertiary-container": "#ea9e93",
+                    "tertiary-container": "#6b342d",
+                    "tertiary-fixed-dim": "#ffb4a9",
+                    "primary-container": "#064e3b",
+                    "primary-fixed": "#b0f0d6",
+                    "secondary-fixed-dim": "#b3ccc0",
+                    "tertiary-fixed": "#ffdad5",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed": "#cfe8dc",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl text-emerald-900 dark:text-emerald-50 font-manrope font-bold tracking-tight docked full-width top-0 sticky z-50 shadow-[0_8px_32px_0_rgba(25,28,30,0.04)] flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-50 dark:hover:bg-emerald-900/40 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-bold text-emerald-900 dark:text-emerald-50 tracking-tighter">Sovereign</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 items-center text-sm">
+<span class="text-emerald-700/50 dark:text-emerald-400/50 font-semibold cursor-pointer">Ledger</span>
+<span class="text-emerald-900 dark:text-emerald-50 font-semibold cursor-pointer">Entry</span>
+<span class="text-emerald-700/50 dark:text-emerald-400/50 font-semibold cursor-pointer">Records</span>
+<span class="text-emerald-700/50 dark:text-emerald-400/50 font-semibold cursor-pointer">Support</span>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a businessman in a suit with a clean office background, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUekGK3A6_VeTRa3mXY-sTldd2kRoHEbHPu6e4GSRUuHYVybdZcL_eAnG_MB9-126o3SafA4WkIez2wFqbdwc2FYdUqLBlYEYUaKMMJ8NW_zCWfXWbpEAGyWhYB7U2iHW5s4zrhtyQbP-2dFyCjdsMhWjJFiSGrlKL3C3-zgl0Ei1Q6c5C_1z2OThiui2dUI4VYG3efKUcyx0-kDFbafV9MJhQs-mVwUvl3wEv2EoN-S99F-pMHShbKkvkaQ9sjqHAPDgu4QagEahb"/>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 max-w-4xl mx-auto w-full px-6 pt-12 pb-32">
+<!-- Editorial Header Section -->
+<div class="mb-12">
+<span class="text-label-sm font-semibold text-primary/60 tracking-[0.2em] uppercase mb-2 block">New Transaction</span>
+<h2 class="font-headline text-[3.5rem] leading-none font-bold text-primary tracking-tight mb-4">Add Entry</h2>
+<p class="text-on-surface-variant max-w-md">Record a new expense to maintain the architectural integrity of your financial ledger.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Form Card -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-[2rem] p-8 lg:p-10 shadow-[0_8px_32px_0_rgba(25,28,30,0.04)]">
+<form class="space-y-8">
+<!-- Amount Input (The Hero) -->
+<div class="space-y-2">
+<label class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-widest block">Amount (USD)</label>
+<div class="relative group">
+<span class="absolute left-6 top-1/2 -translate-y-1/2 text-3xl font-headline font-bold text-primary/30">$</span>
+<input class="w-full bg-surface-container-low border-none rounded-2xl py-6 pl-14 pr-6 text-[3rem] font-headline font-bold text-primary placeholder:text-surface-variant focus:ring-4 focus:ring-primary-fixed/30 transition-all outline-none" placeholder="0.00" step="0.01" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Category Select -->
+<div class="space-y-2">
+<label class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-widest block">Category</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 appearance-none font-medium text-on-surface focus:ring-2 focus:ring-primary transition-all cursor-pointer">
+<option>Select category</option>
+<option>Architectural Fees</option>
+<option>Operational Assets</option>
+<option>Travel &amp; Logistics</option>
+<option>Strategic Marketing</option>
+<option>Client Relations</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Date Input -->
+<div class="space-y-2">
+<label class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-widest block">Date</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 font-medium text-on-surface focus:ring-2 focus:ring-primary transition-all" type="date"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">calendar_today</span>
+</div>
+</div>
+</div>
+<!-- Note / Description -->
+<div class="space-y-2">
+<label class="text-label-sm font-semibold text-on-surface-variant uppercase tracking-widest block">Reference Note</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 font-medium text-on-surface focus:ring-2 focus:ring-primary transition-all resize-none" placeholder="Brief description of the transaction..." rows="3"></textarea>
+</div>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="flex-1 bg-primary text-white font-headline font-bold text-lg py-5 px-8 rounded-2xl hover:scale-[0.98] active:scale-[0.96] transition-all duration-300 shadow-xl shadow-primary/10" type="submit">
+                            Save Entry
+                        </button>
+<button class="flex items-center justify-center gap-2 bg-secondary-container text-on-secondary-container font-semibold py-5 px-8 rounded-2xl hover:bg-secondary-container/80 transition-all" type="button">
+<span class="material-symbols-outlined">print</span>
+                            Print Receipt
+                        </button>
+</div>
+</form>
+</div>
+<!-- Contextual Helper / Sidebar -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Visual Summary Card -->
+<div class="bg-primary text-white rounded-[2rem] p-8 overflow-hidden relative group">
+<div class="relative z-10">
+<h3 class="text-label-sm font-semibold uppercase tracking-widest opacity-60 mb-8">Daily Limit</h3>
+<div class="mb-8">
+<span class="text-4xl font-headline font-bold">$2,450.00</span>
+<p class="text-white/60 text-sm mt-1">Remaining availability</p>
+</div>
+<div class="h-[2px] bg-white/10 w-full mb-2">
+<div class="h-full bg-primary-fixed w-[65%]"></div>
+</div>
+<p class="text-xs font-medium text-primary-fixed">65% of daily budget consumed</p>
+</div>
+<!-- Decorative Background Gradient -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-container rounded-full blur-3xl opacity-50"></div>
+</div>
+<!-- Guidance Tip -->
+<div class="bg-surface-container-low rounded-[2rem] p-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">info</span>
+<h4 class="font-bold text-primary">Sovereign Tip</h4>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Entries with valid receipt prints are processed 24% faster during end-of-month reconciliations. Ensure all fields are precise.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 dark:bg-emerald-950/70 backdrop-blur-2xl text-emerald-900 dark:text-emerald-50 rounded-t-[2rem] z-50 shadow-[0_-8px_32px_0_rgba(25,28,30,0.04)]">
+<div class="flex flex-col items-center justify-center text-emerald-900/40 dark:text-emerald-50/40 px-5 py-2 hover:bg-emerald-50 dark:hover:bg-emerald-800/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined">dashboard_customize</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-widest mt-1">Ledger</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-emerald-900 dark:bg-emerald-100 text-white dark:text-emerald-900 rounded-2xl px-5 py-2 scale-95 active:scale-90 transition-transform duration-300 cursor-pointer">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-widest mt-1">Entry</span>
+</div>
+<div class="flex flex-col items-center justify-center text-emerald-900/40 dark:text-emerald-50/40 px-5 py-2 hover:bg-emerald-50 dark:hover:bg-emerald-800/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-widest mt-1">Records</span>
+</div>
+<div class="flex flex-col items-center justify-center text-emerald-900/40 dark:text-emerald-50/40 px-5 py-2 hover:bg-emerald-50 dark:hover:bg-emerald-800/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-widest mt-1">Support</span>
+</div>
+</nav>
+</body></html>

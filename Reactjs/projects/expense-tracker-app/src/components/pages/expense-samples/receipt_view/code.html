@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sovereign - Transaction Record</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#354b42",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9fb",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-bright": "#f7f9fb",
+                    "surface-tint": "#2b6954",
+                    "on-primary-container": "#80bea6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#0b513d",
+                    "tertiary": "#4f1f19",
+                    "primary-fixed-dim": "#95d3ba",
+                    "on-tertiary-fixed": "#380d08",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-container-high": "#e6e8ea",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#bfc9c3",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface": "#f7f9fb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#091f18",
+                    "secondary": "#4c6359",
+                    "surface-dim": "#d8dadc",
+                    "on-surface-variant": "#404944",
+                    "on-primary-fixed": "#002117",
+                    "on-secondary-container": "#50685d",
+                    "surface-container": "#eceef0",
+                    "on-tertiary-fixed-variant": "#6e372f",
+                    "secondary-container": "#cce6d9",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-background": "#191c1e",
+                    "outline": "#707974",
+                    "inverse-primary": "#95d3ba",
+                    "primary": "#003527",
+                    "on-surface": "#191c1e",
+                    "on-tertiary-container": "#ea9e93",
+                    "tertiary-container": "#6b342d",
+                    "tertiary-fixed-dim": "#ffb4a9",
+                    "primary-container": "#064e3b",
+                    "primary-fixed": "#b0f0d6",
+                    "secondary-fixed-dim": "#b3ccc0",
+                    "tertiary-fixed": "#ffdad5",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed": "#cfe8dc",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+            body { background-color: white !important; }
+            .receipt-container { 
+                box-shadow: none !important; 
+                margin: 0 !important; 
+                padding: 0 !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface">
+<header class="bg-white/80 backdrop-blur-xl text-emerald-900 font-manrope font-bold tracking-tight docked full-width top-0 sticky z-50 shadow-[0_8px_32px_0_rgba(25,28,30,0.04)] no-print">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-50 transition-colors p-2 rounded-xl">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<span class="text-xl font-bold text-emerald-900 tracking-tighter">Sovereign</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="close-up portrait of a professional man in a dark suit with soft studio lighting and neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADGXFxfhezU2Xq2uHn-J5Gzd5i9WAoyinj-D6HKtMkBI2dSf3TQiw2lRvBs1S7WAafvvjfyCc1FMf8Pt-94NIAiNmWlKZz3aoxSrUvj_gp98BMz9skHNo1EQs7VMQaDN2KgFVsE-fuZdG9f4HLJqSPKl8x3upJmJBJ2oZdcoKxrQwUrC3rq7KXOxWHnCnOfphkK-Ev0Qry1tave4peyKdlIGiRpvvoKkQlLlYWV9b6wSyGh5zWbgM7TTc009dcDYdzpke8KwymraSw"/>
+</div>
+</div>
+</div>
+</header>
+
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/70 backdrop-blur-2xl text-emerald-900 font-inter text-[10px] font-semibold uppercase tracking-widest rounded-t-[2rem] z-50 shadow-[0_-8px_32px_0_rgba(25,28,30,0.04)] no-print">
+<div class="flex flex-col items-center justify-center text-emerald-900/40 px-5 py-2 hover:bg-emerald-50 transition-all scale-95 active:scale-90 duration-300">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="dashboard_customize">dashboard_customize</span>
+            Ledger
+        </div>
+<div class="flex flex-col items-center justify-center text-emerald-900/40 px-5 py-2 hover:bg-emerald-50 transition-all scale-95 active:scale-90 duration-300">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="add_circle">add_circle</span>
+            Entry
+        </div>
+<div class="flex flex-col items-center justify-center bg-emerald-900 text-white rounded-2xl px-5 py-2 scale-95 active:scale-90 transition-transform duration-300">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="receipt_long">receipt_long</span>
+            Records
+        </div>
+<div class="flex flex-col items-center justify-center text-emerald-900/40 px-5 py-2 hover:bg-emerald-50 transition-all scale-95 active:scale-90 duration-300">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="contact_support">contact_support</span>
+            Support
+        </div>
+</nav>
+</body></html>
