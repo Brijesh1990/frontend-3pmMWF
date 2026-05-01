@@ -12,7 +12,7 @@
 
       ```
       first install react js 
-      npm install redux react-redux --save
+      npm install redux react-redux  --save
       npm install ui 
    
   **life cycle architectures of Redux**
